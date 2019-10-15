@@ -3,13 +3,20 @@ package DynamicProgramming;
 /**
  * @author Varun Upadhyay (https://github.com/varunu28)
  */
+import jav.util.Scanner;
 public class CoinChange {
 
     // Driver Program
     public static void main(String[] args) {
 
-        int amount = 12;
-        int[] coins = {2, 4, 5};
+        int amount,count;
+        int[] coins;
+        amount=in.nextInt();
+        count=in.nextInt();
+        for(int i=0;i<count;i++)
+        {
+            coins[i]=in.nextInt();
+        }
 
         System.out.println("Number of combinations of getting change for " + amount + " is: " + change(coins, amount));
         System.out.println("Minimum number of coins required for amount :" + amount + " is: " + minimumCoins(coins, amount));
